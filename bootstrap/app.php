@@ -26,6 +26,10 @@ if (class_exists(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class)) {
     $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 }
 
+if (class_exists(Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class)) {
+    $app->register(Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class);
+}
+
 $app->configure('database');
 
 return $app;
