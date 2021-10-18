@@ -5,7 +5,8 @@
     "type": "project",
     "require": {
         "php": "^7.4|^8.0",
-        "laravel/lumen-framework": "^8.2"
+        "laravel/lumen-framework": "^8.2",
+        "zerosuxx/tmdb-api-client": "^1.3"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master"
