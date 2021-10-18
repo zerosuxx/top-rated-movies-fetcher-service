@@ -26,4 +26,6 @@ if (class_exists(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class)) {
     $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 }
 
+$app->configure('database');
+
 return $app;
