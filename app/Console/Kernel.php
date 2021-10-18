@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Console;
 
+use App\Console\Commands\FetchTopRatedMovies;
 use Illuminate\Console\Scheduling\Schedule;
 use Laravel\Lumen\Console\Kernel as ConsoleKernel;
 
@@ -14,7 +15,9 @@ class Kernel extends ConsoleKernel
      *
      * @var array
      */
-    protected $commands = [];
+    protected $commands = [
+        FetchTopRatedMovies::class
+    ];
 
     /**
      * Define the application's command schedule.
