@@ -11,6 +11,7 @@
     "require-dev": {
         "flipbox/lumen-generator": "^8.2",
         "krlove/eloquent-model-generator": "^1.3",
+        "phpunit/phpunit": "^9.5",
         "roave/security-advisories": "dev-master"
     },
     "autoload": {
@@ -28,5 +29,8 @@
         "sort-packages": true,
         "optimize-autoloader": true
     },
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts": {
+        "test": "phpunit --testdox --do-not-cache-result tests/"
+    }
 }
