@@ -30,6 +30,8 @@ if (class_exists(Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider
     $app->register(Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class);
 }
 
+$app->register(App\Providers\AppServiceProvider::class);
+
 $app->configure('database');
 $app->configure('logging');
 
