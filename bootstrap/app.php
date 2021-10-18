@@ -22,4 +22,8 @@ $app->singleton(
     App\Console\Kernel::class
 );
 
+if (class_exists(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class)) {
+    $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
+}
+
 return $app;
